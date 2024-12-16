@@ -5,11 +5,8 @@ name = "pypi"
 
 [packages]
 ipdb = "*"
-sqlalchemy = "*"
-rich = "*"
-ipython = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10.12"
+python_version = "3.10."

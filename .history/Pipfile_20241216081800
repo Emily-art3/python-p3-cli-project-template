@@ -5,9 +5,6 @@ name = "pypi"
 
 [packages]
 ipdb = "*"
-sqlalchemy = "*"
-rich = "*"
-ipython = "*"
 
 [dev-packages]
 
