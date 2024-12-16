@@ -1,8 +1,7 @@
-# lib/db/models.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
 
-# Define the Base class for declarative models
+
 Base = declarative_base()
 
 class User(Base):

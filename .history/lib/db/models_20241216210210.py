@@ -1,8 +1,13 @@
-# lib/db/models.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
+from lib.db.database import engine
+from lib.db.models import Base
 
-# Define the Base class for declarative models
+# Create all tables in the database
+Base.metadata.create_all(engine)
+print("Database tables created successfully!")
+
+
 Base = declarative_base()
 
 class User(Base):

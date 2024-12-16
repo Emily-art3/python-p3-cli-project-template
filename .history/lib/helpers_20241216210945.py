@@ -23,18 +23,3 @@ def list_users():
         return users
     finally:
         db.close()
-
-# Add create_project function
-def create_project(title, description, user_id):
-    db = SessionLocal()
-    try:
-        project = Project(title=title, description=description, user_id=user_id)
-        db.add(project)
-        db.commit()
-        db.refresh(project)
-        print(f"Project '{title}' created with ID: {project.id}")
-    except Exception as e:
-        db.rollback()
-        print(f"Error creating project: {e}")
-    finally:
-        db.close()

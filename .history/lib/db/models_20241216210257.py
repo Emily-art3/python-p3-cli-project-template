@@ -1,4 +1,3 @@
-# lib/db/seed.py
 from lib.db.database import engine
 from lib.db.models import Base
 
