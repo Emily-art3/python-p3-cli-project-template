@@ -1,5 +1,5 @@
 import argparse
-from lib.helpers import create_user, list_users, create_project
+from libcli import create_user, list_users, create_project
 
 # Step 1: Create an argument parser
 parser = argparse.ArgumentParser(description="Phase 3 Project CLI")
